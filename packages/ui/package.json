@@ -1,0 +1,12 @@
+{
+  "name": "@qg/ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tss",
+  "scripts": {},
+  "exports": {
+    ".": {
+      "import": "./index.ts"
+    }
+  }
+}

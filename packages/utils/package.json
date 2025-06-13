@@ -1,0 +1,15 @@
+{
+  "name": "@qg/utils",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.ts"
+    }
+  }
+}

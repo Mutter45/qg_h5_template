@@ -1,0 +1,11 @@
+{
+  "name": "dev-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite"
+  },
+    "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

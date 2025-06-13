@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true, // 如果你要用 ts --build 或 Project References
+    "declaration": true, // 导出类型声明文件
+    "declarationMap": true,
+    "emitDeclarationOnly": true
+  },
+  "outDir": "./dist",
+  "include": ["./**/*.ts"]
+}

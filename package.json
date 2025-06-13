@@ -1,0 +1,28 @@
+{
+  "name": "qg-app",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.10.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "dev:server": "vite --filter dev",
+    "dev:podcast": "pnpm --filter podcast-app dev-server dev",
+    "dev:live": "pnpm --filter live-app dev",
+    "dev:all": "concurrently \"pnpm dev:podcast\" \"pnpm dev:live\" \"pnpm dev:server\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "volta": {
+    "node": "22.16.0"
+  }
+}

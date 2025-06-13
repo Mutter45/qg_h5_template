@@ -1,0 +1,10 @@
+node_modules
+
+.turbo
+
+dist
+
+.DS_Store
+# Logs
+logs
+npm-debug.log*
