@@ -1,1 +1,1 @@
-export * from "./src/say"
+export * from './src/say'

@@ -1,11 +1,11 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <div class="app">
     <h1>PODCAST App test</h1>
   </div>
 </template>
-
-<script setup lang="ts">
-</script>
 
 <style scoped>
 .app {

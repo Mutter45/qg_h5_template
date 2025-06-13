@@ -2,6 +2,8 @@ node_modules
 
 .turbo
 
+.eslintcache
+
 dist
 
 .DS_Store

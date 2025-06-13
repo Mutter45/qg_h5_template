@@ -3,12 +3,12 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["src/*"],
+      "@src/*": ["src/*"]
     },
     "types": [
       "@types/node",
       "vite/client"
-    ],
+    ]
   },
   "include": [
     "src"

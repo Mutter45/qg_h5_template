@@ -1,10 +1,11 @@
 {
   "name": "qg-app",
   "type": "module",
-  "private": true,
   "version": "0.0.1",
+  "private": true,
   "packageManager": "pnpm@9.10.0",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
@@ -14,9 +15,17 @@
     "dev:all": "concurrently \"pnpm dev:podcast\" \"pnpm dev:live\" \"pnpm dev:server\""
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.14.1",
     "concurrently": "^8.0.0",
+    "eslint": "^9.28.0",
+    "lint-staged": "^16.1.0",
     "turbo": "^2.0.0",
     "typescript": "^5.0.0"
+  },
+  "lint-staged": {
+    "**/*.{vue,js,ts,jsx,tsx,html,cjs,json,md}": [
+      "eslint --cache --fix"
+    ]
   },
   "workspaces": [
     "apps/*",

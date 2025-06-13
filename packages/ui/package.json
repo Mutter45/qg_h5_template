@@ -2,11 +2,13 @@
   "name": "@qg/ui",
   "version": "1.0.0",
   "description": "",
-  "main": "index.tss",
-  "scripts": {},
   "exports": {
     ".": {
       "import": "./index.ts"
     }
+  },
+  "main": "index.tss",
+  "scripts": {
+    "lint": "eslint --cache --fix"
   }
 }
