@@ -308,22 +308,15 @@ qg-demo
 │  └─ live-app             # 演示demo
 │  └─ podcast-app          # 演示demo
 ├─ packages                # 项目公共库
-│  ├─ viteconfig           # vite库的配置
-│  ├─ utils                # 常用公共的方法文件
-│  ├─ tsconfig             # tsconfig的公共配置
-│  ├─ request              # axios请求库的公共配置(仅限PC端)
-│  ├─ stores               # 基于zustand状态公共管理库
-├─ commitlint.config.mjs        # git 提交配置
-├─ eslint.config.mjs            # ESLint 校验配置
+│  ├─ ui                   # 公共ui库
+│  └─ utils                # 常用公共的方法文件
+├─ commitlint.config.mjs   # git COMMIT提交配置
+├─ eslint.config.mjs       # ESLint 校验配置
 ├─ .gitignore              # git 提交忽略
 ├─ package.json            # 依赖包管理
 ├─ pnpm-lock.yaml          # pnpm 安装依赖锁文件
 ├─ pnpm-workspace.yaml     # pnpm 工作空间配置
 ├─ README.md               # 项目介绍
-├─ tsconfig.base.json           # typescript 全局配置
+├─ tsconfig.base.json      # typescript 全局配置
 └─ turbo.json              # turbo 配置文件
 ```
-
-## 致谢
-
-- [ADNY](https://github.com/ErKeLost)大佬在monorepo上的帮助
