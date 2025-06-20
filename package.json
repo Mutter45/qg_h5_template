@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "pnpm@10.12.1",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "turbo run dev",
@@ -12,12 +12,17 @@
     "dev:server": "vite --filter dev",
     "dev:podcast": "pnpm --filter podcast-app dev-server dev",
     "dev:live": "pnpm --filter live-app dev",
-    "dev:all": "concurrently \"pnpm dev:podcast\" \"pnpm dev:live\" \"pnpm dev:server\""
+    "dev:all": "concurrently \"pnpm dev:podcast\" \"pnpm dev:live\" \"pnpm dev:server\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.14.1",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "commitlint": "^19.8.1",
     "concurrently": "^8.0.0",
     "eslint": "^9.28.0",
+    "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
     "turbo": "^2.0.0",
     "typescript": "^5.0.0"

@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
     "target": "ESNext", // 支持现代 JS
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "jsx": "preserve", // 如果支持 JSX（比如 Vue + JSX）
     "lib": [
       "DOM",
       "ESNext"
     ], // 支持 DOM + 最新 JS
-    "jsx": "preserve", // 如果支持 JSX（比如 Vue + JSX）
-    "esModuleInterop": true, // 兼容 CommonJS 包
-    "allowSyntheticDefaultImports": true,
-    "allowJs": true, // 编译 JS 文件
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
+    "allowJs": true, // 编译 JS 文件
     "strict": true, // 启用所有严格类型检查
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true, // 兼容 CommonJS 包
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "sourceMap": true
+    "skipLibCheck": true
   },
   "exclude": [
     "node_modules",

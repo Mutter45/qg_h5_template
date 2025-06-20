@@ -10,7 +10,9 @@
     "lint": "eslint --cache --fix"
   },
   "dependencies": {
-    "@qg/utils": "workspace:^",
+    "@qg/ui": "workspace:*",
+    "@qg/utils": "workspace:*",
+    "dayjs": "^1.11.13",
     "vue": "^3.4.0"
   },
   "devDependencies": {
