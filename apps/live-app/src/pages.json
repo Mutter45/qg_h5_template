@@ -1,0 +1,10 @@
+{
+  "pages": [
+    {
+      "path": "pages/index",
+      "style": {
+        "navigationBarTitleText": "Live H5"
+      }
+    }
+  ]
+}

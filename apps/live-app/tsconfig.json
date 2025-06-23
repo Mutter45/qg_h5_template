@@ -6,8 +6,11 @@
       "@src/*": ["src/*"]
     },
     "types": [
-      "@types/node",
-      "vite/client"
+      "vite/client",
+      "@dcloudio/types",
+      "@uni-helper/uni-types",
+      "@uni-helper/uni-ui-types",
+      "@types/lodash-es"
     ]
   },
   "include": [
