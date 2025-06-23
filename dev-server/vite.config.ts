@@ -9,13 +9,13 @@ export default defineConfig({
       '/podcast': {
         target: 'http://localhost:5174',
         changeOrigin: true,
-        ws: true
+        ws: true,
       },
       '/live': {
         target: 'http://localhost:5175',
         changeOrigin: true,
-        ws: true
+        ws: true,
       },
-    }
-  }
+    },
+  },
 })

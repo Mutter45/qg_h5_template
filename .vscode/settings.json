@@ -50,7 +50,7 @@
     "*.tsx": "$(capture).test.ts, $(capture).test.tsx",
     "CHANGELOG.md": "CHANGELOG*",
     "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,LICENSE,.gitattributes,.gitignore,.gitpod.yml,CNAME,.npmrc,.nvmrc,.browserslistrc",
-    "eslint.config.mjs": ".eslintignore,.prettierignore,.commitlintrc.*,.prettierrc.*,.eslintrc-auto-import.mjs,.editorconfig,.commitlint.cjs,commitlint.*"
+    "eslint.config.mjs": ".eslintignore,.prettierignore,.commitlintrc.*,.prettierrc.*,.eslintrc-auto-import.mjs,.editorconfig,lint-staged.config.mjs,.commitlint.cjs,commitlint.*"
   },
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"

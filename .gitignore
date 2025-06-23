@@ -4,6 +4,8 @@ node_modules
 
 .eslintcache
 
+vite.config.ts.*
+
 dist
 
 .DS_Store

@@ -12,30 +12,20 @@
     "dev:server": "vite --filter dev",
     "dev:podcast": "pnpm --filter podcast-app dev-server dev",
     "dev:live": "pnpm --filter live-app dev",
-    "dev:all": "concurrently \"pnpm dev:podcast\" \"pnpm dev:live\" \"pnpm dev:server\"",
-    "prepare": "husky install"
+    "dev:all": "concurrently \"pnpm dev:podcast\" \"pnpm dev:live\" \"pnpm dev:server\""
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.14.1",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@qg/eslint-config": "workspace:*",
+    "@qg/lint-staged-config": "workspace:*",
     "commitlint": "^19.8.1",
     "concurrently": "^8.0.0",
-    "eslint": "^9.28.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.0",
     "turbo": "^2.0.0",
     "typescript": "^5.0.0"
   },
-  "lint-staged": {
-    "**/*.{vue,js,ts,jsx,tsx,html,cjs,json,md}": [
-      "eslint --cache --fix"
-    ]
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "volta": {
     "node": "22.16.0"
   }

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { say } from '@qg/utils'
 
-const message: string = 'Hello, Live App!'
+const message: string = 'Hello, Live App1111!'
 
 say(message)
 localStorage.setItem('liveAppMessage', message)
@@ -9,8 +9,9 @@ localStorage.setItem('liveAppMessage', message)
 
 <template>
   <div class="app">
-    <h1>🎥 Live App test1111 33334444</h1>
+    <h1>🎥 Live App test1111</h1>
     <h2>{{ message }}</h2>
+    <img src="@/static/play.png" alt="" srcset="">
   </div>
 </template>
 
