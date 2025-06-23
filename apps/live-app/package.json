@@ -16,8 +16,6 @@
     "vue": "^3.4.0"
   },
   "devDependencies": {
-    "@qg/eslint-config": "workspace:*",
-    "@qg/lint-staged-config": "workspace:*",
     "@types/node": "^24.0.1",
     "@vitejs/plugin-vue": "^5.0.0",
     "typescript": "^5.0.0",

@@ -2,6 +2,7 @@
 import { say } from '@qg/utils'
 
 const message: string = 'Hello, Live App1111!'
+const a = 1
 
 say(message)
 localStorage.setItem('liveAppMessage', message)

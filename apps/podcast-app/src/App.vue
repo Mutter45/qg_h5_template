@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const b = `1`
 </script>
 
 <template>

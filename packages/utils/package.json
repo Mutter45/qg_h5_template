@@ -11,9 +11,5 @@
   "main": "index.ts",
   "scripts": {
     "lint": "eslint --cache --fix"
-  },
-  "devDependencies": {
-    "@qg/eslint-config": "workspace:*",
-    "@qg/lint-staged-config": "workspace:*"
   }
 }
