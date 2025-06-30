@@ -3,17 +3,23 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["src/*"]
+      "@/*": ["src/*"]
     },
     "types": [
       "vite/client",
       "@dcloudio/types",
       "@uni-helper/uni-types",
       "@uni-helper/uni-ui-types",
-      "@types/lodash-es"
+      "@types/lodash-es",
+      "@types/wechat-miniprogram"
     ]
   },
+  "vueCompilerOptions": {
+    "target": 3,
+    "plugins": ["@uni-helper/uni-types/volar-plugin"]
+  },
   "include": [
-    "src"
+    "src",
+    "shims-uni.d.ts"
   ]
 }

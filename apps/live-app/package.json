@@ -1,20 +1,24 @@
 {
   "name": "live-app",
+  "type": "module",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "uni build --mode production",
     "dev": "uni",
+    "build": "uni build",
+    "build:test": "uni build --mode test",
+    "build:prod": "uni build --mode production",
     "lint": "eslint --cache --fix"
   },
   "dependencies": {
     "@climblee/uv-ui": "^1.1.20",
-    "@dcloudio/uni-app": "3.0.0-alpha-4010520240507001",
-    "@dcloudio/uni-app-plus": "3.0.0-alpha-4010520240507001",
-    "@dcloudio/uni-components": "3.0.0-alpha-4010520240507001",
-    "@dcloudio/uni-h5": "3.0.0-alpha-4010520240507001",
-    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-4010520240507001",
+    "@dcloudio/uni-app": "3.0.0-alpha-4060120250328001",
+    "@dcloudio/uni-app-plus": "3.0.0-alpha-4060120250328001",
+    "@dcloudio/uni-components": "3.0.0-alpha-4060120250328001",
+    "@dcloudio/uni-h5": "3.0.0-alpha-4060120250328001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-4060120250328001",
     "@dcloudio/uni-ui": "^1.5.7",
+    "@qg/utils": "workspace:^",
     "cos-wx-sdk-v5": "^1.7.2",
     "dayjs": "1.11.13",
     "lodash-es": "^4.17.21",
@@ -27,19 +31,18 @@
     "z-paging": "^2.7.12"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
     "@dcloudio/types": "^3.4.12",
-    "@dcloudio/uni-automator": "3.0.0-alpha-4010520240507001",
-    "@dcloudio/uni-cli-shared": "3.0.0-alpha-4010520240507001",
-    "@dcloudio/uni-stacktracey": "3.0.0-alpha-4010520240507001",
-    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4010520240507001",
-    "@eslint/js": "^9.12.0",
+    "@dcloudio/uni-automator": "3.0.0-alpha-4060120250328001",
+    "@dcloudio/uni-cli-shared": "3.0.0-alpha-4060120250328001",
+    "@dcloudio/uni-stacktracey": "3.0.0-alpha-4060120250328001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4060120250328001",
     "@iconify-json/carbon": "^1.2.3",
+    "@qg/vite-config": "workspace:^",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.7.5",
     "@types/wechat-miniprogram": "^3.4.7",
     "@uni-helper/uni-types": "1.0.0-alpha.3",
+    "@uni-helper/uni-ui-types": "1.0.0-alpha.6",
     "@uni-helper/vite-plugin-uni-platform": "^0.0.4",
     "@unocss/preset-legacy-compat": "^0.63.4",
     "rollup-plugin-visualizer": "^5.12.0",
@@ -48,7 +51,6 @@
     "unocss": "^0.63.4",
     "unocss-applet": "^0.8.4",
     "unplugin-auto-import": "^0.18.3",
-    "vite": "5.4.8",
-    "vite-plugin-restart": "^0.4.1"
+    "vite": "5.4.8"
   }
 }

@@ -3,12 +3,14 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@9.10.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
+    "clean": "node scripts/clean.js",
+    "clean:advanced": "node scripts/clean-advanced.js",
     "dev:server": "vite --filter dev",
     "dev:podcast": "pnpm --filter podcast-app dev-server dev",
     "dev:live": "pnpm --filter live-app dev",
@@ -32,6 +34,6 @@
     "**/*.{vue,js,ts,jsx,tsx,html,cjs,json,md}": "eslint --cache --fix"
   },
   "volta": {
-    "node": "22.16.0"
+    "node": "20.17.0"
   }
 }

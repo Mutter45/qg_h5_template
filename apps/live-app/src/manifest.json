@@ -107,8 +107,10 @@
   },
   "vueVersion": "3",
   "h5": {
-    "router": {
-      "base": "./"
+    "optimization": {
+      "treeShaking": {
+        "enable": true
+      }
     }
   }
 }

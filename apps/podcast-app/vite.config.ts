@@ -1,3 +1,4 @@
+import type { ConfigEnv, UserConfig } from 'vite'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import vue from '@vitejs/plugin-vue'
@@ -7,7 +8,7 @@ import { apps } from '../../configs/apps.config'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
   const env = loadEnv(mode, process.cwd())
   const appName = env.VITE_APP_NAME
 

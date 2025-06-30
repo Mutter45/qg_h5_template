@@ -4,6 +4,28 @@
     <base href="/live/" />
     <meta charset="UTF-8" />
     <title>Live App</title>
+    <script>
+      var coverSupport =
+        'CSS' in window &&
+        typeof CSS.supports === 'function' &&
+        (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+          (coverSupport ? ', viewport-fit=cover' : '') +
+          '" />',
+      )
+      // 采用设置rem调整
+      const baseSize = 16
+      const designWidth = 375
+
+      function setRem() {
+        const scale = document.documentElement.clientWidth / designWidth
+        document.documentElement.style.fontSize = `${baseSize * scale}px`
+      }
+
+      window.addEventListener('resize', setRem)
+      setRem()
+    </script>
   </head>
   <body>
     <div id="app"></div>

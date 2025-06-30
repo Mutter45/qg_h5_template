@@ -11,6 +11,7 @@
     "resolveJsonModule": true,
     "allowJs": true, // 编译 JS 文件
     "strict": true, // 启用所有严格类型检查
+    "noImplicitAny": false,
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true, // 兼容 CommonJS 包

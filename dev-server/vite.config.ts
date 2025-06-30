@@ -1,21 +1,21 @@
 import { defineConfig } from 'vite'
+import { apps } from '../configs/apps.config'
 
+const proxy = Object.fromEntries(
+  Object.entries(apps).map(([, config]) => [
+    config.base.replace(/\/$/, ''),
+    {
+      target: `http://localhost:${config.port}`,
+      changeOrigin: true,
+      ws: true,
+    },
+  ]),
+)
+console.log(proxy, 'proxy::::')
 export default defineConfig({
   server: {
     port: 5173,
     open: true,
-    proxy: {
-      // 转发 HTTP 和 WS 请求到 live-app
-      '/podcast': {
-        target: 'http://localhost:5174',
-        changeOrigin: true,
-        ws: true,
-      },
-      '/live': {
-        target: 'http://localhost:5175',
-        changeOrigin: true,
-        ws: true,
-      },
-    },
+    proxy,
   },
 })
