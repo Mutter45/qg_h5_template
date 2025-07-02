@@ -8,10 +8,12 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "turbo run dev",
     "build": "turbo run build",
+
     "lint": "turbo run lint",
     "clean": "node scripts/clean.js",
     "clean:advanced": "node scripts/clean-advanced.js",
     "dev:server": "vite --filter dev",
+    "build:config": "pnpm --filter @qg/vite-config build",
     "dev:podcast": "pnpm --filter podcast-app dev-server dev",
     "dev:live": "pnpm --filter live-app dev",
     "dev:all": "concurrently \"pnpm dev:podcast\" \"pnpm dev:live\" \"pnpm dev:server\"",

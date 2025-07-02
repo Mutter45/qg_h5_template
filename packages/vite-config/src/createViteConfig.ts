@@ -2,7 +2,7 @@ import type { ConfigEnv, PluginOption, UserConfig } from 'vite'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig, loadEnv } from 'vite'
-import { apps } from '../../../configs/apps.config'
+import apps from '../../../apps.config.json'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)

@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import { apps } from '../configs/apps.config'
+import apps from '../apps.config.json'
 
 const proxy = Object.fromEntries(
   Object.entries(apps).map(([, config]) => [
